@@ -24,7 +24,7 @@ export default function AboutPage() {
             transition={{ duration: 0.8, delay: 0.2 }}
             viewport={{ once: true }}
           >
-            Performance Appraisal
+            Employee Lifecycle
           </motion.h2>
 
          <motion.p
