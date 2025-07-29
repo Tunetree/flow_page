@@ -2,6 +2,7 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { ArrowRight } from "lucide-react";
+import {motion} from "framer-motion"
 import Image from "next/image";
 
 // Shortcuts
@@ -73,9 +74,9 @@ const Section = ({
   data: { title: string; icon: string }[];
 }) => (
   <div>
-    <h2 className="text-lg font-semibold p-4 bg-gray-100 w-full">{title}</h2>
+    <h2 className="text-2xl font-semibold p-4 bg-gray-100 w-full">{title}</h2>
     <div className="space-y-4 pb-12 bg-white rounded-b-3xl shadow-lg transition duration-200">
-       <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-4 gap-2">
+       <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-0.5">
       {data.map((card, i) => (
         <Card key={i} className="hover:shadow-lg transition duration-200 bg-gray-100 m-7">
           <CardContent className="p-4 flex flex-col items-center justify-center text-sm font-medium text-gray-800">
@@ -86,13 +87,13 @@ const Section = ({
       ))}
     </div>
     </div>
-  
   </div>
 );
 
 export default function DashboardPage() {
   return (
-    <section className="p-6 space-y-10">
+    <section 
+     className="p-6 space-y-10">
       {/* Shortcuts */}
       <div className="bg-white p-4 rounded-xl shadow">
         <div className="flex justify-between items-center mb-4">
