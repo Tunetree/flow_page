@@ -17,7 +17,7 @@ const shortcuts: { title: string; num: string }[] = [
 ];
 
 // Sections
-const appraisalCards = [
+const EmployeeOnboarding = [
   { title: "Welcoming Message", icon: "/asset/email_8961124.png" },
   { title: "Onboarding Template", icon: "/asset/onboarding (2).png" },
   { title: "Employee Onboarding", icon: "/asset/onboarding (6).png" },
@@ -72,11 +72,12 @@ const Section = ({
   title: string;
   data: { title: string; icon: string }[];
 }) => (
-  <div className="space-y-4 mb-8">
-    <h2 className="text-lg font-semibold">{title}</h2>
-    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
+  <div>
+    <h2 className="text-lg font-semibold p-4 bg-gray-100 w-full">{title}</h2>
+    <div className="space-y-4 pb-12 bg-white rounded-b-3xl shadow-lg transition duration-200">
+       <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-4 gap-2">
       {data.map((card, i) => (
-        <Card key={i} className="hover:shadow-lg transition duration-200">
+        <Card key={i} className="hover:shadow-lg transition duration-200 bg-gray-100 m-7">
           <CardContent className="p-4 flex flex-col items-center justify-center text-sm font-medium text-gray-800">
             <Image src={card.icon} alt={card.title} width={60} height={40} className="mb-2" />
             <span className="text-center text-base">{card.title}</span>
@@ -84,6 +85,8 @@ const Section = ({
         </Card>
       ))}
     </div>
+    </div>
+  
   </div>
 );
 
@@ -122,7 +125,7 @@ export default function DashboardPage() {
       </div>
 
       {/* Sections */}
-      <Section title="Performance Appraisal" data={appraisalCards} />
+      <Section title="Performance Appraisal" data={EmployeeOnboarding} />
       <Section title="Employee Trajectory" data={EmployeeTrajectory} />
       <Section title="Employee Training" data={EmployeeTraining} />
       <Section title="Employee Grievances" data={EmployeeGrivances} />

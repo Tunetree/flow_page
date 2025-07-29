@@ -151,7 +151,7 @@ export function EmployeeOnboardingTable() {
           {/* Filters */}
           <div className="mb-6">
             <p className="text-sm font-medium text-foreground mb-3">Filters</p>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-2 mb-4">
               <Select>
                 <SelectTrigger>
                   <SelectValue placeholder="Select Role" />
