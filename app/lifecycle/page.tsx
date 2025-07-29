@@ -5,15 +5,14 @@ import Body from "@/components/lifecycle"
 import Employeetable from "@/components/employeetable"
 
 
-
 export default function Home() {
   return (
-    <>
+    <div className="p-6 Bg-gray-200">
     <Header />
     <Hore />
     <Appraisal />
     <Body />
     <Employeetable />
-    </>
+    </div>
   );
 }
