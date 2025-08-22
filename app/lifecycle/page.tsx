@@ -2,8 +2,7 @@ import Header from "@/components/Header";
 import Hore from "@/components/employee_hero";
 import Appraisal from "@/components/appraisal";
 import Body from "@/components/employee_lifecycle"
-//import Employeetable from "@/components/employeetable"
-
+import Table from "@/components/employeetable"
 
 export default function Home() {
   return (
@@ -12,6 +11,7 @@ export default function Home() {
     <Hore />
     <Appraisal />
     <Body />
+    <Table />
     </div>
   );
 }
