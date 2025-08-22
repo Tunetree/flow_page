@@ -15,6 +15,10 @@ bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Sir this is the route 
+http://localhost:3000/lifecycle
+http://localhost:3000/empty
+http://localhost:3000/KRAs
 
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
