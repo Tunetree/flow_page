@@ -2,6 +2,11 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 ## Getting Started
 
+Sir this is the route 
+http://localhost:3000/lifecycle
+http://localhost:3000/empty
+http://localhost:3000/KRAs
+
 First, run the development server:
 
 ```bash
